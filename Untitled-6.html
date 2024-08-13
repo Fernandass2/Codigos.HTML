@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro de Usuário</h1>
+        <form action="/enviar" method="post">
+            <div class="form-group">
+                <label for="Nome">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="fernanda" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="123@senac" required>
+                <p><a href="fernanda.php">Ir para página PHP</a></p>
+            </div>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

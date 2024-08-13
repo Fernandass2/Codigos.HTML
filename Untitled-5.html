@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página do PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .container {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à Minha Página PHP</h1>
+        <p>Esta é uma página PHP simples.</p>
+        <?php
+        // Exibe a data e hora atual
+        echo "<p>Data e Hora Atual: " . date("12/08/2024 16:52:34") . "</p>";
+        ?>
+        <p><a href="index.html">Voltar para a Página HTML</a></p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQURqI69DahBWTdbDcuc-_nxNO3Epyg8PcBfg&s" alt="">
+    </div>
+</body>
+</html>

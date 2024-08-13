@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora Atualizada Automaticamente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50;
+            padding: 20px;
+            background-color: #9c2828;
+        }
+        #clock {
+            font-size: 15%;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Atualiza o relógio a cada segundo
+        setInterval(updateClock, 1000);
+
+        // Atualiza o relógio imediatamente ao carregar a página
+        window.onload = updateClock;
+    </script>
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+    <div id="clock">
+        <h1><p><a href="index.html">Voltar para a Página </a></p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTQAMWdl2QL_ydW3NI9yH8xPF5V0dYZ9fjw&s" alt="Bem vindo a pagina PHP"></h1>
+        <p><a href="index.html">Ir para a página HTML</a></p> 
+        
+        <?php
+        // Define o fuso horário
+        date_default_timezone_set('America/Sao_Paulo');
+
+        // Obtém a hora atual inicial
+        echo "Hora Atual: " . date("17:11:16");
+        ?>
+       
+    </div>
+</body>
+</html>
